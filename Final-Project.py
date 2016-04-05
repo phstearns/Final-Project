@@ -27,8 +27,7 @@ class NOTSpaceInvaders(App):
         bg = Sprite(bg_asset, (512,0))
         bg = Sprite(bg_asset, (512,512))
         txt=Sprite(txt_asset, (0,0))
-    """
-    """
+        
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
