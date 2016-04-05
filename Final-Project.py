@@ -10,25 +10,24 @@ from ggame import SoundAsset, Sound, TextAsset, Color
 import math
 from time import time
 
-class AlienShooterGame(App):
+SCREEN_WIDTH = 1200
+SCREEN_HEIGHT = 800
+
+class NOTSpaceInvaders(App):
     def space(self, event):
 
     def __init__(self, width, height):
         
         super().__init__(width, height)
         bg_asset = ImageAsset("images/sky-lights-space-dark.jpg")
-        txt_asset = TextAsset("Control Dwon 3: Tokyo Drift Mode", width = 300, align ='center', style='40px Times', fill=Color(0xff2222,1)) 
+        txt_asset = TextAsset("NOTSpaeInvaders", width = 300, align ='center', style='40px Times', fill=Color(0xff2222,1)) 
         bg = Sprite(bg_asset, (0,0))
         bg = Sprite(bg_asset, (0,512))
         bg = Sprite(bg_asset, (512,0))
         bg = Sprite(bg_asset, (512,512))
         txt=Sprite(txt_asset, (0,0))
-        sun_asset = ImageAsset("images/sun.png")
-        sun = Sun ((400,300))
-        left_location = 1
-        SpaceShip((300,350))
-        SpaceShip2((600,350))
 
+    """
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
@@ -37,6 +36,6 @@ class AlienShooterGame(App):
         explosions = self.getSpritesbyClass(ExplosionSmall)
         for explosion in explosions:
             explosion.step()
-
-myapp = ControlDwon(SCREEN_WIDTH, SCREEN_HEIGHT)
+    """
+myapp = NOTSpaceInvaders(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run()
