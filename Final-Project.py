@@ -14,8 +14,9 @@ SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 800
 
 class NOTSpaceInvaders(App):
-    def space(self, event):
     """
+    def space(self, event):
+    
     def __init__(self, width, height):
         
         super().__init__(width, height)
