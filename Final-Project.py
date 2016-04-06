@@ -18,9 +18,9 @@ class NOTSpaceInvaders(App):
         
         super().__init__(width, height)
         bg_asset = ImageAsset("images/sky-lights-space-dark.jpg")
-        txt_asset = TextAsset("NOTSpaeInvaders", width = 300, align ='center', style='40px Times', fill=Color(0xff2222,1)) 
+        #txt_asset = TextAsset("", width = 300, align ='center', style='40px Times', fill=Color(0xff2222,1)) 
         bg = Sprite(bg_asset, (0,0))
-        txt=Sprite(txt_asset, (0,0))
+        #txt=Sprite(txt_asset, (0,0))
         
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
