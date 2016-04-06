@@ -20,9 +20,6 @@ class NOTSpaceInvaders(App):
         bg_asset = ImageAsset("images/sky-lights-space-dark.jpg")
         txt_asset = TextAsset("NOTSpaeInvaders", width = 300, align ='center', style='40px Times', fill=Color(0xff2222,1)) 
         bg = Sprite(bg_asset, (0,0))
-        bg = Sprite(bg_asset, (0,512))
-        bg = Sprite(bg_asset, (512,0))
-        bg = Sprite(bg_asset, (512,512))
         txt=Sprite(txt_asset, (0,0))
         
     def step(self):
