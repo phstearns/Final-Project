@@ -14,9 +14,6 @@ SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 800
 
 class NOTSpaceInvaders(App):
-    """
-    def space(self, event):
-    
     def __init__(self, width, height):
         
         super().__init__(width, height)
@@ -36,6 +33,6 @@ class NOTSpaceInvaders(App):
         explosions = self.getSpritesbyClass(ExplosionSmall)
         for explosion in explosions:
             explosion.step()
-    """
+
 myapp = NOTSpaceInvaders(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run()
