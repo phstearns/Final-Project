@@ -16,6 +16,7 @@ while quit == False:
         i = input("Enter e to translate text to binary, d to translate binary to text, or q to quit: ")
     if i=="t":
         text=input("text: ")
+        bin(int(binascii.hexlify(text), 16))
         let=[]
         kelt=[]
         comb =[]
