@@ -19,7 +19,7 @@ while quit == False:
         bin=bin(int(binascii.hexlify(text), 16))
         print(bin)
     if i=="b":
-        n = int('0b110100001100101011011000110110001101111', 2)
+        n = int("input: ", 2)
         bin2=binascii.unhexlify('%x' % n)
         print(bin2)
     if i=="q":
