@@ -19,26 +19,9 @@ while quit == False:
         bin=bin(int(binascii.hexlify(text), 16))
         print(bin)
     if i=="b":
-        kelt=[]
-        let=[]
-        comb=[]
-        binary=input("binary: ")
-        if m>k:
-            count = key * int((m-(m%k))/k)
-            trun = key[0:(m%k)]
-            newkey = count + trun
-        elif k>m:
-            newkey = key[0:m] 
-            print(newkey, message)
-        for x in range (0,m):
-            let.append(associations.find(message[x]))
-        for y in range (0,m):
-            kelt.append(associations.find(newkey[y]))
-        for c in range (0,len(kelt)):
-            r = (let[c] - kelt[c]) % 85
-            comb.append(associations[r])
-        print("".join([x for x in comb]), end="")
-        print()
+        binary = input(int("binary: ", 2)
+        bin2 = binascii.unhexlify('%x' % n)
+        print(bin2)
     if i=="q":
         print("Goodbye!")
         quit = True
