@@ -16,7 +16,6 @@ while quit == False:
         i = input("Enter e to translate text to binary, d to translate binary to text, or q to quit: ")
     if i=="t":
         text=input("text: ")
-        m=len(message)
         let=[]
         kelt=[]
         comb =[]
@@ -41,7 +40,6 @@ while quit == False:
         let=[]
         comb=[]
         binary=input("binary: ")
-        m=len(message)
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
