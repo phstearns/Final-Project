@@ -17,7 +17,6 @@ while quit == False:
     if i=="e":
         text=input("text: ")
         m=len(message)
-        k=len(key)
         let=[]
         kelt=[]
         comb =[]
@@ -41,10 +40,8 @@ while quit == False:
         kelt=[]
         let=[]
         comb=[]
-        message=input("Message: ")
-        key=input("Key: ")
+        binary=input("binary: ")
         m=len(message)
-        k=len(key)
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
