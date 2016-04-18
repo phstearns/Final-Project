@@ -9,7 +9,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 quit = False
 
 while quit == False:
-    i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    i = input("Enter e to translate text to binary, d to translate binary to text, or q to quit: ")
     if i not in('e','d','q'):
         print("Did not understand command, try again.")
         i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
