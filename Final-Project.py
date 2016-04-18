@@ -11,10 +11,10 @@ quit = False
 
 while quit == False:
     i = input("Enter e to translate text to binary, d to translate binary to text, or q to quit: ")
-    if i not in('e','d','q'):
+    if i not in('t','b','q'):
         print("Did not understand command, try again.")
         i = input("Enter e to translate text to binary, d to translate binary to text, or q to quit: ")
-    if i=="e":
+    if i=="t":
         text=input("text: ")
         m=len(message)
         let=[]
@@ -36,7 +36,7 @@ while quit == False:
             comb.append(associations[r])
         print("".join([x for x in comb]), end="")
         print()
-    if i=="d":
+    if i=="b":
         kelt=[]
         let=[]
         comb=[]
