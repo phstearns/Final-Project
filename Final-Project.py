@@ -19,8 +19,8 @@ while quit == False:
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
     if i=="b":
-        n = int((input("binary: "), 2)
-        bin2 = (binascii.b2a_uu('%x' % n))
+        n = int(hex(input("binary: "), 2))
+        bin2 = (binascii.unhexlify('%x' % n))
         print(bin2)
     if i=="q":
         print("Goodbye!")
