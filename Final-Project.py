@@ -10,11 +10,11 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 quit = False
 
 while quit == False:
-    i = input("Enter t to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
-    if i not in('t','b','q'):
+    i = input("Enter a to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
+    if i not in('a','b','q'):
         print("Did not understand command, try again.")
-        i = input("Enter t to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
-    if i=="t":
+        i = input("Enter a to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
+    if i=="a":
         ascii=input("ascii: ")
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
