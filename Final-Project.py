@@ -16,7 +16,7 @@ while quit == False:
         i = input("Enter a to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
     if i=="a":
         ascii=input("ascii: ")
-        bin=bin(int(binascii.b2a_hex(ascii), 16))
+        bin=bin(int(binascii.a2b_uu(ascii), 16))
         print(bin)
     if i=="b":
         n = int((input("binary: "), 2)
