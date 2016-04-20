@@ -20,7 +20,10 @@ while quit == False:
         print(bin)
     if i=="b":
         n = input((int("binary: "), 2))
-        n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
+        bins23=list(int(n))
+        print(bins23)
+        bin2 = (binascii.unhexlify('%x' % n))
+        print(bin2)
     if i=="q":
         print("Goodbye!")
         quit = True
