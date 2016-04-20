@@ -6,7 +6,6 @@ Assignment: Final-Project
 Write and submit a program that is your Final Project.
 """
 import binascii
-associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 quit = False
 
 while quit == False:
