@@ -18,8 +18,10 @@ while quit == False:
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
     if i=="b":
-        n = input((int("binary: "), 2))
-        bins23=list(int(n))
+        n = input("binary:") #input((int("binary: "), 2))
+        bins23=[]#list(int(n))
+        for x in n:
+            bins23.append(x)
         print(bins23)
         bin2 = (binascii.unhexlify('%x' % n))
         print(bin2)
