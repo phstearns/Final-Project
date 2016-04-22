@@ -20,10 +20,10 @@ while quit == False:
     if i=="b":
         n = input("binary:") #input((int("binary: "), 2))
         bins23=[]#list(int(n))
-        for x in n:
-            bins23.append(x)
+        for r in n:
+            bins23.append(int(r))
         print(bins23)
-        bin2 = (binascii.unhexlify('%x' % n))
+        bin2 = (binascii.b2a_uu('%x' % n))
         print(bin2)
     if i=="q":
         print("Goodbye!")
