@@ -41,8 +41,8 @@ while quit == False:
             #bins23.append(str(r))
        # print(bins23)
        # bin2 = (binascii.b2a_uu(bins23))
-       sty = str(binascii.unhexlify('%x' % n))
-       sty =  str(sty)[:0] + str(sty)[1:]
+        sty = str(binascii.unhexlify('%x' % n))
+        sty =  str(sty)[:0] + str(sty)[1:]
         print(sty)
     if i=="q":
         print("Goodbye!")
