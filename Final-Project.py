@@ -9,12 +9,12 @@ import binascii
 quit = False
 
 def text_to_bits(text, encoding='utf-8', errors='surrogatepass'):
-    bits = bin(int(binascii.hexlify(text.encode(encoding, errors)), 16))[2:]
+    bits = bin(int.from_bytes(text.encode(encoding, errors), 'big'))[2:]
     return bits.zfill(8 * ((len(bits) + 7) // 8))
 
 def text_from_bits(bits, encoding='utf-8', errors='surrogatepass'):
     n = int(bits, 2)
-    return int2bytes(n).decode(encoding, errors)
+    return n.to_bytes((n.bit_length() + 7) // 8, 'big').decode(encoding, errors) or '\0'
 
 def int2bytes(i):
     hex_string = '%x' % i
@@ -34,13 +34,16 @@ while quit == False:
         #n = input("binary: ")
         #n = int('0b110100001100101011011000110110001101111', 2)
         #n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
-        
+        n = int(input("binary: "), 2)
+        binascii.unhexlify('%x' % n)
         #bins23=[]#list(int(n))
         #for r in n:
             #bins23.append(str(r))
        # print(bins23)
        # bin2 = (binascii.b2a_uu(bins23))
-        print(text_from_bits('110100001100101011011000110110001101111'))
+       sty = str(binascii.unhexlify('%x' % n))
+       sty =  str(sty)[:0] + str(sty)[1:]
+        print(sty)
     if i=="q":
         print("Goodbye!")
         quit = True
