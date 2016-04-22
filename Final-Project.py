@@ -18,13 +18,15 @@ while quit == False:
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
     if i=="b":
-        n = input("binary:") #input((int("binary: "), 2))
-        bins23=[]#list(int(n))
-        for r in n:
-            bins23.append(int(r))
-        print(bins23)
-        bin2 = (binascii.b2a_uu('%x' % n))
-        print(bin2)
+        n = input("binary: ")
+        n = int(n, 2)
+        n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
+        #bins23=[]#list(int(n))
+        #for r in n:
+            #bins23.append(str(r))
+       # print(bins23)
+       # bin2 = (binascii.b2a_uu(bins23))
+        print(n)
     if i=="q":
         print("Goodbye!")
         quit = True
