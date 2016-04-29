@@ -31,16 +31,8 @@ while quit == False:
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
     if i=="b":
-        #n = input("binary: ")
-        #n = int('0b110100001100101011011000110110001101111', 2)
-        #n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
         n = int(input("binary: "), 2)
         binascii.unhexlify('%x' % n)
-        #bins23=[]#list(int(n))
-        #for r in n:
-            #bins23.append(str(r))
-       # print(bins23)
-       # bin2 = (binascii.b2a_uu(bins23))
         sty = str(binascii.unhexlify('%x' % n))
         sty =  str(sty)[:0] + str(sty)[1:]
         print(sty)
