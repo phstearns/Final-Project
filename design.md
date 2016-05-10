@@ -1,4 +1,4 @@
-# Payton's Final Project
+# Payton's Binary-Unicode Translator
 
 ## Design Specification
 
