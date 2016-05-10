@@ -22,10 +22,10 @@ def int2bytes(i):
     return binascii.unhexlify(hex_string.zfill(n + (n & 1)))
 
 while quit == False:
-    i = input("Enter a to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
+    i = input("Enter u to translate Unicode to binary, b to translate binary to Unicode, or q to quit: ")
     if i not in('a','b','q'):
         print("Did not understand command, try again.")
-        i = input("Enter a to translate ascii to binary, b to translate binary to ascii, or q to quit: ")
+        i = input("Enter u to translate Unicode to binary, b to translate binary to Unicode, or q to quit: ")
     if i=="a":
         ascii=input("ascii: ")
         bin=bin(int(binascii.hexlify(ascii), 16))
