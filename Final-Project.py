@@ -30,17 +30,23 @@ while quit == False:
         ascii=input("ascii: ")
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
+    """
     if i=="u":
         unic=input("unicode: ")
         bin2=
         print(bin2)
+    """
     if i=="ba":
         n = int(input("binary: "), 2)
         binascii.unhexlify('%x' % n)
         sty = str(binascii.unhexlify('%x' % n))
         sty =  str(sty)[:0] + str(sty)[1:]
         print(sty)
+    """
     if i=="bu":
+        n = int(input(binary: "), 2)
+        
+    """
     if i=="q":
         print("Goodbye!")
         quit = True
