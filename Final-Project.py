@@ -34,7 +34,7 @@ while quit == False:
         print(binascii.hexlify(ascii))
     if i=="u":
         unic = input("unicode: ")
-        byt2 = BitArray(hex=unic)
+        byt2 = bytearray(hex=unic)
         byt3 = bin(int(byt2)) 
         print(byt3)
     if i=="ba":
