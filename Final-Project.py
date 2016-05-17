@@ -34,8 +34,8 @@ while quit == False:
         print(binascii.hexlify(ascii))
     if i=="u":
         unic = input("unicode: ")
-        byt2 = BitArray(hex=unic)
-        byt3 = bin(int(byt2)) 
+        c = BitArray(hex=unic)
+        byt3 = bin(int(c)) 
         print(byt3)
     if i=="ba":
         n = int(input("binary: "), 2)
