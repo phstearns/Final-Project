@@ -30,12 +30,13 @@ while quit == False:
         ascii=input("ascii: ")
         bin=bin(int(binascii.hexlify(ascii), 16))
         print(bin)
-    """
+        print(int(binascii.hexlify(ascii), 16))
+        print(binascii.hexlify(ascii))
     if i=="u":
-        unic=input("unicode: ")
-        bin2=
-        print(bin2)
-    """
+        unic = input("unicode: ")
+        byt2 = BitArray(hex=unic)
+        byt3 = bin(int(byt2)) 
+        print(byt3)
     if i=="ba":
         n = int(input("binary: "), 2)
         binascii.unhexlify('%x' % n)
