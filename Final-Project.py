@@ -6,8 +6,6 @@ Assignment: Final-Project
 Write and submit a program that is your Final Project.
 """
 import binascii
-import utf-8
-from bitstring import BitArray
 quit = False
 
 def text_to_bits(text, encoding='utf-8', errors='surrogatepass'):
