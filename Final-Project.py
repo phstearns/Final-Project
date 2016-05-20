@@ -31,11 +31,11 @@ while quit == False:
         bin2=bin(int(binascii.hexlify(ascii), 16))
         print(bin2)
     if i=="u":
-        #unic = input("unicode: ")
+        unic = input("unicode: ")
         #byt2 = bytearray(hex=unic)
         #byt2 = bin(int('ff', base=16))[2:]
        # byt3 = bin(int(byt2)) 
-        print(bin(int('ff', base=16))[2:])
+        print(bin(int(unic, base=16))[2:])
     if i=="ba":
         n = int(input("binary: "), 2)
         binascii.unhexlify('%x' % n)
