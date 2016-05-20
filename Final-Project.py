@@ -28,12 +28,10 @@ while quit == False:
         i = input("Enter a to translate ascii to binary, u to translate Unicode to binary, ba to tranlate binary to ascii, bu to translate binary to Unicode, or q to quit: ")
     if i=="a":
         ascii=input("ascii: ")
-        bin=bin(int(binascii.hexlify(ascii), 16))
-        print(bin)
-        print(int(binascii.hexlify(ascii), 16))
-        print(binascii.hexlify(ascii))
+        bin2=bin(int(binascii.hexlify(ascii), 16))
+        print(bin2)
     if i=="u":
-        unic = input("unicode: ")
+        #unic = input("unicode: ")
         #byt2 = bytearray(hex=unic)
         #byt2 = bin(int('ff', base=16))[2:]
        # byt3 = bin(int(byt2)) 
