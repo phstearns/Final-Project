@@ -31,3 +31,8 @@ Your specification should **not** include the following types of information:
 * Names of any specific files in the project.
 * How you will structure the classes, functions and code in your program.
 * The name of any files or tools that you will use to design the program.
+
+
+
+In this program, you can choose to translate ascii or unicode characters to binary and also from binary back to ascii or unicode.  
+It's accessed by using http://runpython.com. There are a few screens that will show up, the first one having a prompt telling you what to type in to reach the screen which corresponds with what you want the program to do. There are many keyboard inputs which the program will respond to. If "a" is entered, the screen changes to allow you to translate ascii to binary. If "u" is entered, the screen changes to allow you to translate Unicode to binary. If "ba" is entered, the screen changes to allow you to translate binary to ascii. If "bu" is entered, the screen changes to allow you to translate binary to Unicode. If "q" is entered, the program is ended and "Goodbye!" appears on the screen.
