@@ -27,7 +27,7 @@ while quit == False:
         sty =  str(sty)[:0] + str(sty)[1:]
         print(sty)
     if i=="bu":
-        n = int(input("binary: "), 2)
+        n = chr(int(input("binary: "), 2))
         print(n)
     if i=="q":
         print("Goodbye!")
