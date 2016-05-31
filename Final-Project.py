@@ -9,10 +9,10 @@ import binascii
 quit = False
 
 while quit == False:
-    i = input("Enter a to translate ascii to binary, u to translate Unicode to binary, ba to tranlate binary to ascii, bu to translate binary to Unicode, or q to quit: ")
+    i = input("Hola! Porfavor enter a to translate ascii to binary, u to translate Unicode to binary, ba to tranlate binary to ascii, bu to translate binary to Unicode, or q to quit: ")
     if i not in('a', 'u', 'ba', 'bu', 'q'):
         print("AI does no unnnderstund. Plees try 'gain.")
-        i = input("Enter a to translate ascii to binary, u to translate Unicode to binary (enter all numbers after U+), ba to tranlate binary to ascii, bu to translate binary to Unicode, or q to quit: ")
+        i = input("Porfavor enter a to translate ascii to binary, u to translate Unicode to binary (enter all numbers after U+), ba to tranlate binary to ascii, bu to translate binary to Unicode, or q to quit: ")
     if i=="a":
         ascii=input("ascii: ")
         bin2=bin(int(binascii.hexlify(ascii), 16))
@@ -30,5 +30,5 @@ while quit == False:
         n = chr(int(input("binary: "), 2))
         print(n)
     if i=="q":
-        print("Goodbye!")
+        print("Adios!")
         quit = True
