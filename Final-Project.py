@@ -5,6 +5,7 @@ Credit: Python Documentation, Morgan, Mr. Dennison, Stack Overflow
 Assignment: Final-Project
 Write and submit a program that is your Final Project.
 """
+print("Hello, world!")
 import binascii
 quit = False
 
