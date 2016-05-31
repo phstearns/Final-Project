@@ -18,8 +18,8 @@ while quit == False:
         bin2=bin(int(binascii.hexlify(ascii), 16))
         print(bin2)
     if i=="u":
-        unic = input("unicode: ")
-        print(bin(int(unic, base=16))[2:])
+        unic = ord(input("unicode: "))
+        print(bin(unic)[2:])
     if i=="ba":
         n = int(input("binary: "), 2)
         binascii.unhexlify('%x' % n)
